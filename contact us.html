@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Privacy Policy - Infura Solutions</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Infura Solutions</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
-
 <body>
-
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a href="#"><img src="images/infura logo.png" alt="logo" class="navbar-brand-logo"></a>
@@ -45,28 +41,50 @@
         </div>
     </nav>
 
+    <!-- Contact Page Container -->
+    <div class="contact-container">
+        <h2 class="contact-title">Contact Infura Solutions</h2>
 
-    <!-- content  -->
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <p><strong>📍 Address:</strong> J1602 Aig Park Avinue Greater Noida Sector 4 201301</p>
+            <p><strong>📞 Phone:</strong> +91 8467069545</p>
+            <p><strong>📧 Email:</strong> contact@infurasolutions.com</p>
+        </div>
 
-
-    <div class="privecy-itemc-page">
-        <div class="privecy-container">
-            <h1 class="privecy-heading">Inclusion & Diversity at Infura Solutions</h1>
-            <p class="privecy-text">At Infura Solutions, we are committed to fostering a diverse and inclusive workplace
-                where every individual, regardless of background, has the opportunity to thrive. We believe that a
-                diverse team drives innovation, creativity, and better decision-making. By embracing different
-                perspectives, experiences, and cultures, we create an environment where everyone feels valued and
-                empowered.</p>
-
-            <div class="privecy-section">
-               
-                <p>Our inclusive hiring practices ensure equal opportunities for all, and we actively promote a culture
-                    of respect, equity, and continuous learning. We strive to build a workforce that reflects the
-                    diverse communities we serve, creating a more dynamic and successful organization. At Infura
-                    Solutions, diversity is not just an initiative—it’s a core part of who we are.</p>
+        <!-- Contact Form -->
+        <form id="contact-contact-form">
+            <div class="contact-form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="contact-name" required>
             </div>
-</div>
+            
+            <div class="contact-form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="contact-email" required>
+            </div>
+            
+            <div class="contact-form-group">
+                <label for="message">Your Message</label>
+                <textarea id="contact-message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="contact-btn">Send Message</button>
+        </form>
+
+        <!-- Social Links -->
+        <div class="contact-social">
+            <p>Follow Us:</p>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+           
+          
+        </div>
     </div>
+
+
+
     <div class="footer-items">
         <footer class="footer">
             <div class="container">
@@ -74,8 +92,8 @@
                     <div class="col-md-2">
                         <h5>About us</h5>
                         <ul>
-                            <li><a href="index.html#leadership">Our team</a></li>
-                            <li><a href="index.html#recruitment-form">Join the team</a></li>
+                            <li><a href="#leadership">Our team</a></li>
+                            <li><a href="#recruitment-form">Join the team</a></li>
                             <li><a href="Inclusion  Diversity.html">Inclusion & Diversity</a></li>
                             <li><a href="privecy policy.html">Privacy Policy</a></li>
                         </ul>
@@ -93,6 +111,7 @@
                         <ul>
                             <li><a href="openings.html">Browse Opportunities</a></li>
                             <li><a href="index.html#recruitment-form">Freelance Candidates</a></li>
+                           
                         </ul>
                     </div>
                     <div class="col-md-2">
@@ -123,9 +142,33 @@
             </div>
         </div>
     </div>
-    <!-- Bootstrap JS -->
+    <script>
+        // Form Submission
+        document.getElementById("contact-contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let name = document.getElementById("contact-name").value.trim();
+            let email = document.getElementById("contact-email").value.trim();
+            let message = document.getElementById("contact-message").value.trim();
+
+            if (name === "" || email === "" || message === "") {
+                alert("❌ Please fill all the fields!");
+                return;
+            }
+
+            alert("✅ Message sent successfully! We will get back to you soon.");
+            document.getElementById("contact-contact-form").reset();
+        });
+
+        // Scroll Animation
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(() => {
+                document.querySelector(".contact-container").classList.add("show");
+            }, 300);
+        });
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
+<!-- Compare this snippet from index.html: -->

@@ -99,3 +99,30 @@
             document.getElementById("seniorPopup").style.display = "none";
         }, 300);
     }
+
+// exclusive search 
+  document.addEventListener("DOMContentLoaded", function () {
+            let sections = document.querySelectorAll(".exclusive-section");
+            let options = {
+                threshold: 0.2
+            };
+
+            let observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+
+        function exclusiveLearnMore() {
+            alert("Stay tuned for more details on Infura Solutions' Exclusive Search!");
+        }
+    
+
+        

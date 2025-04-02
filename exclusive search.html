@@ -3,17 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Privacy Policy - Infura Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infura Solutions - Exclusive Search</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a href="#"><img src="images/infura logo.png" alt="logo" class="navbar-brand-logo"></a>
@@ -44,28 +46,44 @@
             </div>
         </div>
     </nav>
+    <div class="exclusive-container">
+        <h2 class="exclusive-title">Exclusive Search at Infura Solutions</h2>
+
+        <div class="exclusive-section">
+            <h3> What is Exclusive Search at Infura Solutions?</h3>
+            <p>Infura Solutions' Exclusive Search is a premium talent acquisition service that focuses on identifying
+                and recruiting top-tier professionals for highly specialized roles. We go beyond conventional hiring
+                practices to ensure that organizations connect with the best candidates in the industry.</p>
+        </div>
+
+        <div class="exclusive-section">
+            <h3>Why Choose Exclusive Search?</h3>
+            <p>1. Access to Top Talent: Our network includes the best professionals in technology, cybersecurity,
+                blockchain, and AI. <br>
+        2. Confidential & Efficient: We maintain strict confidentiality while ensuring a fast and effective
+                hiring
+                process.
+        <br>
+        
+                3. Tailored Recruitment: We understand your business needs and find candidates that perfectly align with
+                your goals.
+            </p>
+        </div>
+
+        <div class="exclusive-section">
+            <h3>Our Exclusive Search Process</h3>
+            <p>1. Understanding Your Requirements: We analyze your specific hiring needs. <br>
+                2. Targeted Talent Mapping: We research and identify top professionals in your industry. <br>
+                3. Screening & Assessment: We conduct in-depth evaluations, technical interviews, and background checks. <br>
+                4. Presentation of Candidates: We present a shortlist of qualified candidates for your review. <br>
+
+            </p>
+        </div>
 
 
-    <!-- content  -->
+        
 
-
-    <div class="privecy-itemc-page">
-        <div class="privecy-container">
-            <h1 class="privecy-heading">Inclusion & Diversity at Infura Solutions</h1>
-            <p class="privecy-text">At Infura Solutions, we are committed to fostering a diverse and inclusive workplace
-                where every individual, regardless of background, has the opportunity to thrive. We believe that a
-                diverse team drives innovation, creativity, and better decision-making. By embracing different
-                perspectives, experiences, and cultures, we create an environment where everyone feels valued and
-                empowered.</p>
-
-            <div class="privecy-section">
-               
-                <p>Our inclusive hiring practices ensure equal opportunities for all, and we actively promote a culture
-                    of respect, equity, and continuous learning. We strive to build a workforce that reflects the
-                    diverse communities we serve, creating a more dynamic and successful organization. At Infura
-                    Solutions, diversity is not just an initiative—it’s a core part of who we are.</p>
-            </div>
-</div>
+        <button class="exclusive-btn" onclick="exclusiveLearnMore()">Learn More</button>
     </div>
     <div class="footer-items">
         <footer class="footer">
@@ -74,8 +92,8 @@
                     <div class="col-md-2">
                         <h5>About us</h5>
                         <ul>
-                            <li><a href="index.html#leadership">Our team</a></li>
-                            <li><a href="index.html#recruitment-form">Join the team</a></li>
+                            <li><a href="#leadership">Our team</a></li>
+                            <li><a href="#recruitment-form">Join the team</a></li>
                             <li><a href="Inclusion  Diversity.html">Inclusion & Diversity</a></li>
                             <li><a href="privecy policy.html">Privacy Policy</a></li>
                         </ul>
@@ -123,7 +141,30 @@
             </div>
         </div>
     </div>
-    <!-- Bootstrap JS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let sections = document.querySelectorAll(".exclusive-section");
+            let options = {
+                threshold: 0.2
+            };
+
+            let observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+
+        function exclusiveLearnMore() {
+            alert("Stay tuned for more details on Infura Solutions' Exclusive Search!");
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>

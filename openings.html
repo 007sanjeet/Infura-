@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Openings - Infura Solutions</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="#"><img src="images/infura logo.png" alt="logo" class="navbar-brand-logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="openings.html">Openings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="exclusive search.html">Exclusive Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact us.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container ">
+        <h1 class="openings-page-1">Exciting Job Openings at Infura Solutions</h1>
+        <p class="opening-text-1">Infura Solutions is a rapidly growing company dedicated to innovation and
+            excellence. We are committed to providing cutting-edge technology solutions and fostering a dynamic work
+            environment that encourages creativity, collaboration, and growth. Our job openings span various
+            domains, including software development, data analytics, and machine learning, with opportunities for
+            both remote and on-site positions. We believe in hiring talented individuals who are passionate about
+            their craft and eager to contribute to transformative projects. Explore our current vacancies and take</p>
+    </div>
+
+
+
+
+    <div class="job-container container">
+        <h2 class="job-title text-center text-primary">Our <span class="text-danger">Vacancies</span></h2>
+        <div id="jobList"></div>
+    </div>
+
+    <div class="modal fade" id="applyModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Apply for Job</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="applyForm">
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control apply-name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control apply-email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone</label>
+                            <input type="text" class="form-control apply-phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Resume</label>
+                            <input type="file" class="form-control apply-resume" required>
+                        </div>
+                        <button type="submit" class="btn btn-success apply-submit">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="footer-items">
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h5>About us</h5>
+                        <ul>
+                            <li><a href="index.html#leadership">Our team</a></li>
+                            <li><a href="index.html#recruitment-form">Join the team</a></li>
+                            <li><a href="Inclusion  Diversity.html">Inclusion & Diversity</a></li>
+                            <li><a href="privecy policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>Capabilities</h5>
+                        <ul>
+                            <li><a href="index.html#change">Change & Transformation</a></li>
+                            <li><a href="exclusive search.html">Consulting Services</a></li>
+                            <li><a href="index.html#groth">Strategy & Growth</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>Candidates</h5>
+                        <ul>
+                            <li><a href="openings.html">Browse Opportunities</a></li>
+                            <li><a href="index.html#recruitment-form">Freelance Candidates</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>Businesses</h5>
+                        <ul>
+                            <li><a href="services.html">Consultants</a></li>
+                            <li><a href="index.html#leadership">Project Teams</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>Contact</h5>
+                        <ul>
+                            <li>+91 8467069545</li>
+                            <li>info@infura.com</li>
+                            <li>Gaur City-1 Greater Noida 201303</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-bottom">
+            <p>&copy; Infura Solutions 2025</p>
+            <div class="social-icons">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let jobList = document.getElementById("jobList");
+            let jobs = [
+                { title: "Machine Learning Engineer", salary: "$80,000", location: "remote", type: "Full-time", environment: "Hybrid", status: "openings:- 5" },
+                { title: "Software Developer", salary: "$75,000", location: "Noida", type: "Full-time", environment: "Remote", status: "openings:- 10" },
+                { title: "Software engineer", salary: "$7,000", location: "Noida", type: "Full-time", environment: "Onsite", status: "openings:- 2" },
+                { title: "Data Analyst", salary: "$70,000", location: "California", type: "Part-time", environment: "Hybrid", status: "openings:- 20" }
+            ];
+            jobs.forEach(job => {
+                let jobItem = document.createElement("div");
+                jobItem.classList.add("job-card");
+                jobItem.innerHTML = `
+                    <h4 class="job-heading"><i class='fas fa-briefcase'></i> ${job.title}</h4>
+                    <p class="job-salary"><strong><i class='fas fa-dollar-sign'></i> Salary:</strong> ${job.salary}</p>
+                    <p class="job-location"><i class='fas fa-map-marker-alt'></i> ${job.location}</p>
+                    <p class="job-info"><i class='fas fa-clock'></i> ${job.type} <i class='fas fa-building'></i> ${job.environment} <i class='fas fa-fire'></i> ${job.status}</p>
+                    <button class='apply-btn' data-bs-toggle="modal" data-bs-target="#applyModal">Apply</button>
+                `;
+                jobList.appendChild(jobItem);
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
